@@ -2,7 +2,7 @@
 
 ## Exo1/
 
-> INSERT INTO `languages` (`language`,`versions`) VALUES
+> INSERT INTO `languages` (`language`,`version`) VALUES
 > ('javascript', 'v5'),('php', 'v5.2'),('php', 'v5.3'),('html', 'v5.1'),('javascript', 'v6'),('javascript', 'v7'),('javascript', 'v8'),('php', 'v7');
 
 >> Query OK, 8 rows affected (0.00 sec)

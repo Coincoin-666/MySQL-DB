@@ -1,0 +1,48 @@
+-- MySQL-partTWO-TABLES
+
+-- Exo2.1
+
+use webDevelopment;
+
+CREATE TABLE IF NOT EXISTS `languages` (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, language VARCHAR(100));
+
+-- Exo2.2
+
+CREATE TABLE IF NOT EXISTS `tools` (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, tool VARCHAR(100));
+
+-- Exo2.3
+
+CREATE TABLE IF NOT EXISTS `frameworks` (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, name VARCHAR(100));
+
+-- Exo2.4
+
+CREATE TABLE IF NOT EXISTS `libraries` (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, library VARCHAR(100));
+
+-- Exo2.5
+
+CREATE TABLE IF NOT EXISTS `ide` (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, idename VARCHAR(100));
+
+-- Exo2.6
+
+CREATE TABLE IF NOT EXISTS `frameworks` (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, name VARCHAR(100));
+-- Seriously..?
+
+-- Exo2.7
+
+DROP TABLE IF EXISTS `tools`;
+
+-- Exo2.8
+
+DROP TABLE IF EXISTS `libraries`;
+
+-- Exo2.9
+
+DROP TABLE IF EXISTS `ide`;
+
+-- TP
+
+CREATE DATABASE IF NOT EXISTS `codex`;
+
+use `codex`;
+
+CREATE TABLE IF NOT EXISTS `clients` (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, `lastname` VARCHAR(100), `firstname` VARCHAR(100), `birthdate` DATE, `address` VARCHAR(500), `firstPhoneNumber` INT, `secondPhoneNumber` INT, `mail` VARCHAR(100))
