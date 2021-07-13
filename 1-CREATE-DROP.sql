@@ -2,11 +2,11 @@
 
 -- Exo1.1
 
-CREATE DATABASE ` languages ` ;
+CREATE DATABASE `languages` ;
 
 -- Exo1.2
 
-CREATE DATABASE ` webDevelopment` CHARACTER SET `utf8mb4` COLLATE `utf8mb4_unicode_ci`;
+CREATE DATABASE `webDevelopment` CHARACTER SET `utf8mb4` COLLATE `utf8mb4_unicode_ci`;
 
 -- Exo1.3
 
