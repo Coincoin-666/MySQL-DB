@@ -87,8 +87,23 @@ CREATE TABLE has_number(
 --------------------------------------------------------------
 
 INSERT INTO `isbn`(`isbn_number`) VALUES
-('978-0-141-03614-4'),
-('978-2-13-060871-4');
+('978-0-141-03614-4'),            --1
+('978-2-13-060871-4'),           --2
+('978-2-7071-8680-5'),           --3
+('978-2-84950-891-6'),          --4
+('978-2-264-05789-1'),           --5
+('978-2-0807-0036-0'),          --6
+('2-264-00840-7'),                   --7
+('979-10-209-0699-1'),           --8
+('978-2-36106-5096'),            --9
+('978-2-35522-122-4'),          --10
+('979-10-329-0609-5'),          --11
+('978-2-7381-4567-3'),          --12
+('978-2-84734-525-4'),          --14
+('none'),
+('978-23730908-0-2'),           --15
+('978-2-7029-1122-8'),          --16
+('2-7441-7081-X');                   --17
 
 --------------------------------------------------------------
 -- Insert: Genres
@@ -97,8 +112,13 @@ INSERT INTO `isbn`(`isbn_number`) VALUES
 INSERT INTO `genres`(`genres_name`) VALUES
 ('Philosophia'),
 ('Dystopia'),
-('Science-Fiction')
-('Pirate Life');
+('Science-Fiction'),
+('History'),
+('Novel'),
+('Political'),
+('Sciences'),
+('Sociology'),
+('HowToBooks');
 
 --------------------------------------------------------------
 -- Insert: Books
@@ -106,7 +126,20 @@ INSERT INTO `genres`(`genres_name`) VALUES
 
 INSERT INTO `books`(`books_title`,`books_author`,`books_year`,`genres_id`, `isbn_id`) VALUES
 ('1984', 'George Orwell', 1949, 2, 1),
-('Critique de la raison pure', 'Emmanuel Kant', 1944, 1, 2);
+('Critique de la raison pure', 'Emmanuel Kant', 1944, 1, 2),
+('La Commune', 'Louise Michel', 1898, 4, 3),
+('La Commune Au Jour Le Jour', 'various', 1871, 4, 4),
+('IQ84-Livre 2', 'Haruki Murakami', 2009, 5, 5),
+('Éloge de la Folie', 'Érasme', 1508, 1, 6),
+('Le Manifeste du Parti Communiste', 'Karl Marx', 1847, 6, 7),
+("L'Art d'Être Libre", 'Tom Hodkinson', 2006, 1, 8),
+('Psychologie De La Connerie', 'various', 2018, 1, 9),
+('Développement (im)personnel', 'Julia De Funès', 2019, 1, 11),
+('Brèves Réponses Aux Grandes Questions', 'Stephen Hawking', 2018, 7, 12),
+("Souvenirs d'un Insurgé–La Commune 1871", 'Paul Martine', 1971, 4), --No isbn – Librairie Académique Nantaise
+("Mémoires de Prison d'un Anarchiste", 'Alexandre Berkman', 1912, 4, 14),
+('Guide du Dépannage et des Réparations Domestiques', "The Reader's Digest", 1974, 9);  --No isbn – Reader's Digest Selection
+('3MPC 50 Plus Grandes Théories de la Physique Quantique', 'Brian Clegg', 2014, 9, 15)
 
 --------------------------------------------------------------
 -- JOIN
